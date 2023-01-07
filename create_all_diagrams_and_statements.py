@@ -49,7 +49,12 @@ for index, row in data.iterrows():
                  pattern, row[filenameindex],
                  create_pdf=create_pdf, show_pdf=show_pdf, create_svg=create_svg, show_plot=show_plot)
 
+    print('{}.'.format(index+1))
     print('{}({},{})   {}'.format(row['table1'], row['attribute11'], row['attribute12'], row['table1alias']))
     print('{}({},{})   {}'.format(row['table2'], row['attribute21'], row['attribute22'], row['table2alias']))
     print('{}({})   {}'.format(row['table3'], row['attribute31'], row['table3alias']))
+    print('1. {}'.format(row['answer1']))
+    print('2. {}'.format(row['answer2']))
+    print('3. {}'.format(row['answer3']))
+    print('4. {}'.format(row['answer4']))
     print()
