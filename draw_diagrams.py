@@ -24,7 +24,7 @@ delta = 0.9 # horizontal distance between tables (layers)
 def draw_diagram(table1, table2, table3,
                  attribute11, attribute12, attribute21, attribute22, attribute31,
                  pattern, fig_filename,
-                 create_pdf=True, show_pdf=True, create_svg=False, show_plot=False):
+                 create_pdf=True, show_pdf=True, create_svg=False, show_plot=False, create_png=False):
 
     mpl.rcParams['font.family'] = "Arial"
     mpl.rcParams['font.size'] = "32"
@@ -139,6 +139,19 @@ def draw_diagram(table1, table2, table3,
 
         plt.savefig(join(figure_directory, fig_filenamesvg), format='svg',
                     dpi=None,
+                    edgecolor='w',
+                    orientation='portrait',
+                    transparent=False,
+                    bbox_inches='tight',
+                    pad_inches=0.05,
+                    # frameon=None
+                    )
+
+    if create_png:
+        fig_filenamepng = fig_filename + '.png'
+
+        plt.savefig(join(figure_directory, fig_filenamepng), format='png',
+                    dpi=200,
                     edgecolor='w',
                     orientation='portrait',
                     transparent=False,

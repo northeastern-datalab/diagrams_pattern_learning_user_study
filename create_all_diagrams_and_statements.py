@@ -15,6 +15,7 @@ create_pdf = False
 show_pdf = False
 create_svg = False
 show_plot = False
+create_png = True
 
 
 # -- Determine path to data *irrespective* of where the file is run from
@@ -31,6 +32,9 @@ except IOError as error:
 
 print(data)
 
+jsonFileName = 'output.json'
+data.to_json(join(data_directory,jsonFileName), orient='records', date_format=None, double_precision=10, force_ascii=True, date_unit='ms', default_handler=None, lines=False, compression='infer', index=True, indent=None, storage_options=None)
+
 
 # -- Iterate over file rows (and the 4 patterns) and call the create diagram and sql function
 for index, row in data.iterrows():
@@ -40,14 +44,14 @@ for index, row in data.iterrows():
         draw_diagram(row['table1'], row['table2'], row['table3'],
                      row['attribute11'], row['attribute12'], row['attribute21'], row['attribute22'], row['attribute31'],
                      pattern, row[filenameindex],
-                     create_pdf=create_pdf, show_pdf=show_pdf, create_svg=create_svg, show_plot=show_plot)
+                     create_pdf=create_pdf, show_pdf=show_pdf, create_svg=create_svg, show_plot=show_plot, create_png=create_png)
 
     # row contains 4 filenames, one for each of the 4 pattern per row
     for (pattern, filenameindex) in zip([1, 2, 3, 4], ['sqlpattern1', 'sqlpattern2', 'sqlpattern3', 'sqlpattern4']):
         draw_sql(row['table1'], row['table2'], row['table3'], row['table1alias'], row['table2alias'], row['table3alias'],
                  row['attribute11'], row['attribute12'], row['attribute21'], row['attribute22'], row['attribute31'],
                  pattern, row[filenameindex],
-                 create_pdf=create_pdf, show_pdf=show_pdf, create_svg=create_svg, show_plot=show_plot)
+                 create_pdf=create_pdf, show_pdf=show_pdf, create_svg=create_svg, show_plot=show_plot, create_png=create_png)
 
     print('{}.'.format(index+1))
     print('{}({},{})   {}'.format(row['table1'], row['attribute11'], row['attribute12'], row['table1alias']))
