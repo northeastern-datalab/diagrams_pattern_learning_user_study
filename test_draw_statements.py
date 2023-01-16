@@ -9,26 +9,26 @@ from draw_statements import draw_sql
 
 create_pdf = True
 show_pdf = True
-create_svg = True
+create_svg = False
 show_plot = False
 
 
 fig_filename = 'Fig_test_sql'
-pattern = 2
+pattern = 1
 
-table1 = 'Sailor'
+table1 = 'Student'
 table1alias = 'S'
-table2 = 'Reserves'
-table2alias = 'R'
-table3 = 'Boat'
-table3alias = 'B'
+table2 = 'Passes'
+table2alias = 'P'
+table3 = 'Exam'
+table3alias = 'E'
 
 attribute01 = 'sname'
 attribute11 = 'sname'
-attribute12 = 'sid'
-attribute21 = 'bid'
-attribute22 = 'sid'
-attribute31 = 'bid'
+attribute12 = 'ID'
+attribute21 = 'examid'
+attribute22 = 'ID'
+attribute31 = 'examid'
 
 
 
