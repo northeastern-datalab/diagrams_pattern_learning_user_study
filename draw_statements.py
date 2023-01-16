@@ -24,7 +24,7 @@ def draw_sql(table1, table2, table3, table1alias, table2alias, table3alias,
     mpl.rcParams['font.size'] = "32"
     mpl.rcParams['figure.figsize'] = [11, 7]
     font_manager.fontManager.addfont(
-        './source-code-pro-2.030R-ro-1.050R-it/OTF/SourceCodePro-Regular.otf')   # SQL font used by PgAdmin
+        './fonts/OTF/SourceCodePro-Regular.otf')   # SQL font used by PgAdmin
     # SQL font used by PgAdmin
     mpl.rcParams['font.family'] = "Source Code Pro"
 

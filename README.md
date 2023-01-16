@@ -32,7 +32,7 @@
    rm ~/.cache/matplotlib -rf
    ```
 
-4. To get Source Code Pro font for showing SQL run
+4. This includes in the [`./fonts`](./fonts/) folder a Source Code Pro font for showing SQL. If you want to download the whole font package, run:
 
     ```bash
     wget https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip
@@ -41,10 +41,10 @@
     then
 
     ```bash
-    unzip 1.050R-it.zip
+    unzip 1.050R-it.zip -d /fonts
     ```
 
-    The code expects the font is available at [`./source-code-pro-2.030R-ro-1.050R-it/OTF/SourceCodePro-Regular.otf`](./source-code-pro-2.030R-ro-1.050R-it/OTF/SourceCodePro-Regular.otf)
+    The code expects the font is available at [`./fonts/OTF/SourceCodePro-Regular.otf`](./fonts/OTF/SourceCodePro-Regular.otf)
 
 ## Run instructions
 
