@@ -14,7 +14,7 @@ show_plot = False
 
 
 fig_filename = 'Fig_test_sql'
-pattern = 1
+pattern = 2
 
 table1 = 'Student'
 table1alias = 'S'
@@ -26,9 +26,9 @@ table3alias = 'E'
 attribute01 = 'sname'
 attribute11 = 'sname'
 attribute12 = 'ID'
-attribute21 = 'examid'
+attribute21 = 'exam_id'
 attribute22 = 'ID'
-attribute31 = 'examid'
+attribute31 = 'exam_id'
 
 
 
