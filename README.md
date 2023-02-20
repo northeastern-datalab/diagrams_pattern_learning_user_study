@@ -17,7 +17,7 @@
 2. Run
 
     ```bash
-    pip3 install -r requirements.txt
+    python3 -m pip install -r requirements.txt
     ```
 
 3. To get the Arial font for the visual diagrams run
@@ -58,3 +58,7 @@
 
 3. The generated SQL and visual diagram stimuli will be in [`./figs/`](./figs/). The generated JSON for the study will be in [`./data/output.json`](./data/output.json)
 
+## Export instructions
+
+1. Replace `./data/questions.json` of the AMT experiment code with [`./data/output.json`](./data/output.json).
+2. Delete `*.pdf`, `*.png`, `*.svg` from `./static/img` of the AMT experiment code and copy everything in [`./figs/'](./figs) to that folder.
