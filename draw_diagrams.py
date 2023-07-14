@@ -1,5 +1,5 @@
 """
-Code that draws a relational diagram given the schema information and choice of pattern
+Code that draws a visual diagram given the schema information and choice of pattern
 1/5/2022
 """
 
