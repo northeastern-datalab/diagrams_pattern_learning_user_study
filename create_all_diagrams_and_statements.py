@@ -1,5 +1,5 @@
 """
-code that creates visual diagrams and SQL statements, for different schemas, and 4 patterns.
+code that creates relational diagrams and SQL statements, for different schemas, and 4 patterns.
 takes an input CSV file with various schemas information
 1/5/2023
 """
@@ -11,9 +11,9 @@ from os.path import abspath, dirname, join
 from inspect import getfile, currentframe
 
 
-create_pdf = True
+create_pdf = False
 show_pdf = False
-create_svg = True
+create_svg = False
 show_plot = False
 create_png = True
 
