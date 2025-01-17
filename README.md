@@ -1,5 +1,7 @@
 # Code to create all diagrams and statements for the visual diagrams study
 
+Note that the authors originally ran this code on a Windows 11 machine, version 10.0.226.31.4112, using WSL 2.2.4.0 and Ubuntu 20.04.6 LTS. The Python version in WSL/Ubuntu was 3.11.7 (Ubuntu).
+
 ## Installation instructions on Ubuntu
 
 1. Create a virtual environment with
